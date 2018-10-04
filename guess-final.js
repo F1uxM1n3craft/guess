@@ -6,6 +6,9 @@ var answer = Math.floor(Math.random()*100)+1;
 var Turns = 0;
 // var correct boolean, set to false
 var Correct = false;
+// Log answer to the console before going to the while loop. 
+// *CHALLANGE: Comment out the line if your ready to guess it without cheating*
+console.log(answer);
 // Keep looping while correct is false
 while(Correct == false) {
    // prompt user for guess, tell user what to input
@@ -23,10 +26,9 @@ while(Correct == false) {
   if (guess < answer)
     alert("Guess was too low, go higher")
    
-// ** Basic loop end
-   // if equal, say "Correct!" and say number of turns
-    // add one to turns
+ //add one to turns
   Turns++;
+  // Loop End.
 }
     alert("you guess it in "+Turns+" turns");
 alert("Thanks for playing!");
